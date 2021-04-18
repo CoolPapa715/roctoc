@@ -1,0 +1,171 @@
+[15-Apr-2021 03:34:48 UTC] [Unable to SELECT data from 'lists' table]Unknown column 'notify_new_signups' in 'field list': in /home/roctoc/public_html/mailing/includes/update.php on line 928
+[15-Apr-2021 03:34:48 UTC] [Unable to SELECT data from 'apps' table]: in /home/roctoc/public_html/mailing/includes/update.php on line 945
+[15-Apr-2021 03:34:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/roctoc/public_html/mailing/includes/header.php:3) in /home/roctoc/public_html/mailing/includes/functions.php(1) : eval()'d code on line 93
+[15-Apr-2021 09:05:08 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/roctoc/public_html/mailing/includes/header.php:3) in /home/roctoc/public_html/mailing/includes/functions.php(1) : eval()'d code on line 235
+[15-Apr-2021 09:05:09 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/roctoc/public_html/mailing/includes/header.php:3) in /home/roctoc/public_html/mailing/includes/functions.php(1) : eval()'d code on line 252
+[15-Apr-2021 09:05:10 Asia/Kolkata] PHP Warning:  SimpleEmailService::getSendQuota(): Sender - SignatureDoesNotMatch: The request signature we calculated does not match the signature you provided. Check your AWS Secret Access Key and signing method. Consult the service documentation for details.
+
+The Canonical String for this request should have been
+'GET
+/
+Action=GetSendQuota
+content-type:application/x-www-form-urlencoded
+host:email.us-east-1.amazonaws.com
+x-amz-date:20210415T033509Z
+
+content-type;host;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+
+The String-to-Sign should have been
+'AWS4-HMAC-SHA256
+20210415T033509Z
+20210415/us-east-1/email/aws4_request
+a3bd3be55163c393bed73106e2a0f79514300c63ff0082a63f114951d80b9b47'
+
+Request Id: 7d9f5435-87b9-4fa7-82c5-15d7eb640a9c
+ in /home/roctoc/public_html/mailing/includes/helpers/ses.php on line 529
+[15-Apr-2021 09:05:11 Asia/Kolkata] PHP Warning:  SimpleEmailService::getSendQuota(): Sender - SignatureDoesNotMatch: The request signature we calculated does not match the signature you provided. Check your AWS Secret Access Key and signing method. Consult the service documentation for details.
+
+The Canonical String for this request should have been
+'GET
+/
+Action=GetSendQuota
+content-type:application/x-www-form-urlencoded
+host:email.us-east-1.amazonaws.com
+x-amz-date:20210415T033510Z
+
+content-type;host;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+
+The String-to-Sign should have been
+'AWS4-HMAC-SHA256
+20210415T033510Z
+20210415/us-east-1/email/aws4_request
+80b4443b419bf4a3648f321818f5422106f70e5c6df4fb40f0cc8a53dbe15fd8'
+
+Request Id: c76451a8-a9ba-40db-919b-8927402c9936
+ in /home/roctoc/public_html/mailing/includes/helpers/ses.php on line 529
+[15-Apr-2021 09:05:11 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/roctoc/public_html/mailing/includes/helpers/ses-quota.php on line 13
+[15-Apr-2021 09:05:12 Asia/Kolkata] PHP Warning:  SimpleEmailService::ListIdentities(): Sender - SignatureDoesNotMatch: The request signature we calculated does not match the signature you provided. Check your AWS Secret Access Key and signing method. Consult the service documentation for details.
+
+The Canonical String for this request should have been
+'GET
+/
+Action=ListIdentities
+content-type:application/x-www-form-urlencoded
+host:email.us-east-1.amazonaws.com
+x-amz-date:20210415T033511Z
+
+content-type;host;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+
+The String-to-Sign should have been
+'AWS4-HMAC-SHA256
+20210415T033511Z
+20210415/us-east-1/email/aws4_request
+51fe97054d2f2d0d84042b966fe8e4d28a8dff1a124158d3f051a85f11e2c65d'
+
+Request Id: 8649b013-0991-4342-8765-933c9bb22d22
+ in /home/roctoc/public_html/mailing/includes/helpers/ses.php on line 529
+[15-Apr-2021 09:05:26 Asia/Kolkata] PHP Warning:  SimpleEmailService::getSendQuota(): Sender - SignatureDoesNotMatch: The request signature we calculated does not match the signature you provided. Check your AWS Secret Access Key and signing method. Consult the service documentation for details.
+
+The Canonical String for this request should have been
+'GET
+/
+Action=GetSendQuota
+content-type:application/x-www-form-urlencoded
+host:email.us-east-1.amazonaws.com
+x-amz-date:20210415T033525Z
+
+content-type;host;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+
+The String-to-Sign should have been
+'AWS4-HMAC-SHA256
+20210415T033525Z
+20210415/us-east-1/email/aws4_request
+b42c52870b95021971c5238e6c2e26f18a9ce8a8c0223ef427fb4fe4eb7d66ac'
+
+Request Id: 3e6fb137-fc8b-4a57-96a2-b6a083fdf8e0
+ in /home/roctoc/public_html/mailing/includes/helpers/ses.php on line 529
+[15-Apr-2021 09:05:27 Asia/Kolkata] PHP Warning:  SimpleEmailService::getSendQuota(): Sender - SignatureDoesNotMatch: The request signature we calculated does not match the signature you provided. Check your AWS Secret Access Key and signing method. Consult the service documentation for details.
+
+The Canonical String for this request should have been
+'GET
+/
+Action=GetSendQuota
+content-type:application/x-www-form-urlencoded
+host:email.us-east-1.amazonaws.com
+x-amz-date:20210415T033526Z
+
+content-type;host;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+
+The String-to-Sign should have been
+'AWS4-HMAC-SHA256
+20210415T033526Z
+20210415/us-east-1/email/aws4_request
+fc4b2a7be7b0cda9fac5063d2de86e28c2cee057b176ed6621e5fd02c27d8090'
+
+Request Id: 4c0056a0-ffee-4a23-950e-73e3b506a5fb
+ in /home/roctoc/public_html/mailing/includes/helpers/ses.php on line 529
+[15-Apr-2021 09:05:27 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/roctoc/public_html/mailing/includes/helpers/ses-quota.php on line 13
+[15-Apr-2021 09:18:04 Asia/Kolkata] PHP Warning:  SimpleEmailService::getSendQuota(): Sender - SignatureDoesNotMatch: The request signature we calculated does not match the signature you provided. Check your AWS Secret Access Key and signing method. Consult the service documentation for details.
+
+The Canonical String for this request should have been
+'GET
+/
+Action=GetSendQuota
+content-type:application/x-www-form-urlencoded
+host:email.us-east-1.amazonaws.com
+x-amz-date:20210415T034803Z
+
+content-type;host;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+
+The String-to-Sign should have been
+'AWS4-HMAC-SHA256
+20210415T034803Z
+20210415/us-east-1/email/aws4_request
+9c46952d1a3e9363ff0d77c244ffe95e562c3923f11e3ae162020294fac4736e'
+
+Request Id: d8d66c7c-1928-49d0-97f0-26360795645d
+ in /home/roctoc/public_html/mailing/includes/helpers/ses.php on line 529
+[15-Apr-2021 09:18:05 Asia/Kolkata] PHP Warning:  SimpleEmailService::getSendQuota(): Sender - SignatureDoesNotMatch: The request signature we calculated does not match the signature you provided. Check your AWS Secret Access Key and signing method. Consult the service documentation for details.
+
+The Canonical String for this request should have been
+'GET
+/
+Action=GetSendQuota
+content-type:application/x-www-form-urlencoded
+host:email.us-east-1.amazonaws.com
+x-amz-date:20210415T034804Z
+
+content-type;host;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+
+The String-to-Sign should have been
+'AWS4-HMAC-SHA256
+20210415T034804Z
+20210415/us-east-1/email/aws4_request
+66351bdac227ae0c7277d0845dfd3b4aff37dc0b66433070e51551f4abacc7d7'
+
+Request Id: 25591fbb-3990-4f89-a9a4-680873d32f8d
+ in /home/roctoc/public_html/mailing/includes/helpers/ses.php on line 529
+[15-Apr-2021 09:18:05 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/roctoc/public_html/mailing/includes/helpers/ses-quota.php on line 13
+[15-Apr-2021 09:19:29 Asia/Kolkata] PHP Warning:  SimpleEmailService::getSendQuota(): Sender - AccessDenied: User: arn:aws:iam::051557293467:user/ses-smtp-user.20210412-175657 is not authorized to perform: ses:GetSendQuota
+Request Id: 3a88c521-01eb-40fe-bde5-26f142a245cb
+ in /home/roctoc/public_html/mailing/includes/helpers/ses.php on line 529
+[15-Apr-2021 09:19:30 Asia/Kolkata] PHP Warning:  SimpleEmailService::getSendQuota(): Sender - AccessDenied: User: arn:aws:iam::051557293467:user/ses-smtp-user.20210412-175657 is not authorized to perform: ses:GetSendQuota
+Request Id: 71a55996-d7f2-45fd-a10c-300851343594
+ in /home/roctoc/public_html/mailing/includes/helpers/ses.php on line 529
+[15-Apr-2021 09:19:30 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/roctoc/public_html/mailing/includes/helpers/ses-quota.php on line 13
+[15-Apr-2021 09:19:44 Asia/Kolkata] PHP Warning:  SimpleEmailService::getSendQuota(): Sender - AccessDenied: User: arn:aws:iam::051557293467:user/ses-smtp-user.20210412-175657 is not authorized to perform: ses:GetSendQuota
+Request Id: 0b5f16a0-d8d0-40d8-aba8-46dbc52604f7
+ in /home/roctoc/public_html/mailing/includes/helpers/ses.php on line 529
+[15-Apr-2021 09:19:45 Asia/Kolkata] PHP Warning:  SimpleEmailService::getSendQuota(): Sender - AccessDenied: User: arn:aws:iam::051557293467:user/ses-smtp-user.20210412-175657 is not authorized to perform: ses:GetSendQuota
+Request Id: 2a38c165-6e6e-49d1-9e0d-4c4fd9c54095
+ in /home/roctoc/public_html/mailing/includes/helpers/ses.php on line 529
+[15-Apr-2021 09:19:45 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/roctoc/public_html/mailing/includes/helpers/ses-quota.php on line 13
+[15-Apr-2021 05:08:55 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/roctoc/public_html/mailing/includes/functions.php(1) : eval()'d code on line 91
+[15-Apr-2021 05:08:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/roctoc/public_html/mailing/includes/header.php:3) in /home/roctoc/public_html/mailing/includes/functions.php(1) : eval()'d code on line 93

@@ -1,0 +1,838 @@
+==================================================
+v.3.36 23 October, 2020
+==================================================
+[00] [update] change version
+	=> inc/common.inc.php
+
+[01] [improve] contact user button position (also included in 3.35)
+	=> templates/css/styles.css
+	=> templates/tpl-profile.php
+	=> templates/tpl-reviews.php
+	=> templates/tpl-favorites.php
+
+[02] [fix] make txt_send_email global (also included in 3.35)
+	=> directoryplus.sql
+	=> directoryplus_varchar190.sql
+
+[03] [improve] navbar homepage jumping on scroll
+	=> templates/tpl-js/js-home.php
+
+[04] [fix] rating on profile page
+	=> templates/tpl-profile.php
+	=> templates/tpl-favorites.php
+
+[05] [fix] use ternary for database rows (also included in 3.35)
+	=> inc/functions.php
+
+[06] [update] update stripe
+	=> composer.json
+	=> composer.lock
+	=> vendor
+
+[07] [fix] case no category for listing
+	=> listing.php
+
+==================================================
+v.3.35 7 October, 2020
+==================================================
+[00] [update] change version
+	=> inc/common.inc.php
+
+[01] [improve] set is_tpl_listing before calling listing.php
+	=> index.php
+
+[02] [improve] check if function exists
+	=> inc/functions.php
+
+[03] [fix] fix pagination when manually linking to /results without params
+	=> results.php
+
+[04] [improve] add label to required and searchable checkboxes
+	=> templates/admin-templats/tpl-create-custom-field.php
+
+[05] [update] update select2 i18n to 4.0.8
+	=> templates/footer.php
+	=> templates/tpl-results.php
+	=> templates/tpl-listings.php
+
+==================================================
+v.3.34 17 September, 2020
+==================================================
+[00] [update] change version
+	=> inc/common.inc.php
+
+[01] [fix] hybridauth uses curly braces for arrays which are deprecated in PHP 7.4
+	=> vendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php
+
+[02] [improve] improve rotation function
+	=> inc/smart_resize_image.php
+
+[03] [improve] show rounded logo thumbnail on edit listing
+	=> templates/user-templates/tpl-edit-listing.php
+
+[04] [improve] rework logo upload
+	=> inc/common.inc.php
+	=> inc/my.functions.php
+	=> user/process-upload-logo.php
+
+[05] [improve] adjustments to logo display
+	=> templates/css/styles.css
+	=> templates/tpl-listings.php
+	=> templates/tpl-results.php
+
+[06] [improve] resize coupon on upload
+	=> user/process-upload-coupon.php
+
+[07] [improve] improve coupon creation process
+	=> templates/user-templates/tpl-my-coupons.php
+	=> templates/tpl-js/user-js/js-my-coupons.php
+
+==================================================
+v.3.33 23 August, 2020
+==================================================
+[00] [update] change version
+	=> inc/common.inc.php
+
+[02] [fix] duplicate entity conversion
+	=> user/my-coupons.php
+	=> templates/user-templates/tpl-my-coupons.php
+	=> listing.php
+
+[03] [fix] check emptiness
+	=> user/sign-in.php
+
+[04] [improve] check both user id and token
+	=> inc/common.inc.php
+
+[05] [fix] duplicate custom field id and value in rel_place_custom_fields table
+	=> user/process-create-listing.php
+	=> user/process-edit-listing.php
+
+==================================================
+v.3.32 25 Jul, 2020
+==================================================
+[00] [update] change version
+	=> inc/common.inc.php
+
+[02] [fix]use $this_ variable prefix
+	=> user/edit-listing.php
+
+[03] [improve] remove unused category_id_hidden hidden input
+	=> templates/user-templates/tpl-edit-listing.php
+
+[04] [improve] init array $custom_fields_ids
+	=> user/get-custom-fields.php
+
+[05] [improve] use function e()
+	=> user/get-custom-fields.php
+
+[06] [improve] remove deprecated functions from Swiftmailer library for PHP7.4 compatibility
+	=> vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/DiskKeyCache.php
+
+[07] [improve] edit comment
+	=> templates/tpl-js/user-js/js-process-create-listing.php
+	=> templates/tpl-js/user-js/js-process-edit-listing.php
+
+[08] [fix] replace default lat/lng with the listing lat/lng
+	=> templates/tpl-js/user-js/js-edit-listing.php
+
+[09] [improve] rearrange code
+	=> templates/tpl-js/user-js/js-create-listing.php
+	=> templates/tpl-js/user-js/js-edit-listing.php
+
+[10] [improve] include order by p.feat
+	=> user/my-favorites.php
+
+[11] [fix] avoid possible duplicate custom fields by using field id as array key
+	=> user/edit-listing.php
+
+[12] [fix] select2 dropdown partially hidden beneath navbar in mobile view
+	=> templates/css/styles.css
+
+[13] [improve] check video attributes
+	=> listing.php
+
+[14] [fix] cancel previous ajax request to avoid race condition
+	=> templates/tpl-js/user-js/js-create-listing.php
+	=> templates/tpl-js/user-js/js-edit-listing.php
+
+[15] [improve] remove group by field id and add field id as key in custom field array
+	=> user/get-custom-fields.php
+
+[16] [fix] fix custom fields range numeric search using CAST() function
+	=> results.php
+
+[17] [fix] fix listings counter and display
+	=> admin/listings.php
+
+[18] [feature] add nearby filter
+	=> db-updater-sample.php
+	=> db-updater.php
+	=> listings.php
+	=> results.php
+	=> directoryplus.sql
+	=> directoryplus_varchar190.sql
+	=> admin/process-settings.php
+	=> inc/common.inc.php
+	=> inc/pagination.php
+	=> sql/lang_de.sql
+	=> sql/lang_en.sql
+	=> sql/lang_es.sql
+	=> sql/lang_fr.sql
+	=> sql/lang_pt.sql
+	=> templates/admin-templates/tpl-settings.php
+	=> templates/tpl-js/js-listings.php
+	=> templates/tpl-listings.php
+	=> templates/tpl-results.php
+	=> templates/head.php
+
+[19] [improve] remove geolocation code from head template file
+	=> templates/head.php
+
+[20] [improve] improve post max size limit handling
+	=> templates/tpl-js/user-js/js-create-listing.php
+	=> user/process-remove-tmp.php (created)
+	=> templates/tpl-js/user-js/js-edit-listing.php
+	=> user/process-upload.php
+	=> user/process-upload-logo.php
+
+[21] [improve] install script deletes the db-updater file
+	=> install.php
+
+[22] [improve] filter custom fields by category in admin area
+	=> admin/custom-fields.php
+	=> templates/admin-templates/tpl-custom-fields.php
+
+[23] [improve] normalize third party libraries versions
+	=> templates/admin-templates/admin-head.php
+
+[24] [improve] profile image style change
+	=> templates/css/styles.css
+	=> templates/tpl-listing.php
+	=> templates/tpl-profile.php
+	=> templates/modal-contact-user.php
+	=> profile.php
+
+[25] [fix] child template check basename to prevent reloading itself
+	=> templates/user-templates/user-head.php
+	=> templates/user-templates/user-menu.php
+	=> templates/admin-templates/admin-head.php
+	=> templates/admin-templates/admin-menu.php
+	=> templates/admin-templates/admin-footer.php
+
+[26] [improve] cursor pointer to upload category image button
+	=> templates/admin-templates/tpl-categories.php
+	=> admin/get-cat.php
+
+[27] [improve] contact numbers adjustments and improve display
+	=> templates/modal-contact-user.php
+
+[28] [improve] change create listing button
+	=> templates/header.php
+
+[29] [fix] fix category count
+	=> categories.php
+	=> templates/tpl-categories.php
+
+==================================================
+v.3.31 19 June, 2020
+==================================================
+[00] [update] change version
+	=> inc/common.inc.php
+
+[01] [improve] select template submit on change
+	=> templates/admin-templates/tpl-language.php
+
+[02] [improve] rearrange some code and comments and adjustments
+	=> listings.php
+
+[03] [fix] third level subcategories not showing
+	=> results.php
+
+[04] [improve] remove custom fields params from category links
+	=> results.php
+
+[05] [improve] create language public/results vars
+	=> db-updater.php
+	=> db-updater-sample.php
+	=> directoryplus.sql
+	=> directoryplus_varchar190.sql
+
+[06] [improve] check if main cat id is empty
+	=> listing.php
+
+[07] [fix] fix sql error and include is_main value as bound param
+	=> user/process-create-listing.php
+	=> user/process-edit-listing.php
+
+==================================================
+v.3.30 9 June, 2020
+==================================================
+[00] [update] change version
+	=> inc/common.inc.php
+
+[01] [fix] unknown column 'cats.ids' in 'on clause'
+	=> results.php
+
+[02] [fix] remove function scope for Maps
+	=> templates/tpl-js/user-js/js-edit-listing.php
+
+[03] [improve] maintenance mode message
+	=> templates/header.php
+
+[04] [improve] removed unused hardcoded hero image
+	=> templates/css/styles.css
+
+[05] [improve] get listing if status is approved only
+	=> listing.php
+
+[06] [improve] rename $created to $prof_created
+	=> profile.php
+
+[07] [improve] remove unused endpoint 'advanced-results'
+	=> templates/head.php
+
+[08] [improve] show listing to admin if status pending
+	=> listing.php
+
+[09] [improve] admin listings page sort search results
+	=> templates/admin-templates/tpl-listings.php
+
+[10] [fix] remove undefined vars
+	=> user/process-remove-listing.php
+
+[11] [improve] improvements to get_listing_link() function
+	=> inc/functions.php
+
+[12] [fix] maintenance mode template fix
+	=> templates/head.php
+	=> templates/tpl-maintenance.php
+
+[13] [update] update Leaflet
+	=> inc/map-provider-options.php
+	=> assets/js/leaflet-providers.js
+
+[14] [improve] minimize content jump
+	=> templates/admin-templates/tpl-listings.php
+	=> templates/admin-templates/tpl-listings-trash.php
+
+[15] [fix] delete from trash not working in Firefox
+	=> templates/admin-templates/tpl-listings-trash.php
+
+[16] [improve] move city param in cat_link from tpl-results.php to results.php
+	=> results.php
+	=> templates/tpl-results.php
+
+[17] [improve] set smtp encryption option as parameter
+	=> process-contact.php
+	=> send-msg.php
+	=> inc/common.inc.php
+	=> payment-gateways/ipn-claim.php
+	=> payment-gateways/paypal.php
+	=> payment-gateways/stripe.php
+	=> user/forgot-password.php
+	=> user/notify-admin.php
+	=> user/process-edit-listing.php
+	=> user/process-remove-listing.php
+	=> user/register.php
+	=> user/resend-confirmation.php
+
+==================================================
+v.3.29 13 May, 2020
+==================================================
+[00] [update] change version
+	=> inc/common.inc.php
+
+[01] [improve] replace la icon with fa phone icon
+	=> templates/tpl-listing.php
+
+[02] [improve] child theme functionality to custom fields
+	=> templates/user-templates/tpl-custom-fields.php
+
+[03] [improve] function e() adjustment
+	=> inc/functions.php
+
+[04] [fix] place link
+	=> templates/tpl-results.php
+
+[05] [improve] remove search from url parameters when empty
+	=> admin/listings.php
+
+[06] [improve] updated template not included in previous version
+	=> templates/user-templates/tpl-custom-fields.php
+
+[07] [improve] remove element ul#cat-checkboxes
+	=> templates/admin-templates/tpl-edit-custom-field.php
+
+[08] [fix] string var name issue
+	=> admin/process-create-string.php
+
+[09] [feature] multiple categories per listing
+	=> coupon.php
+	=> favorites.php
+	=> home.php
+	=> listing.php
+	=> listings.php
+	=> profile.php
+	=> results.php
+	=> reviews.php
+	=> inc/functions.php
+	=> admin/home.php
+	=> admin/listings.php
+	=> admin/listings-trash.php
+	=> admin/reviews.php
+	=> admin/reviews-trash.php
+	=> user/create-listing.php
+	=> user/edit-listing.php
+	=> user/get-custom-fields.php
+	=> user/my-favorites.php
+	=> user/my-listings.php
+	=> user/my-reviews.php
+	=> user/process-create-listing.php
+	=> user/process-edit-listing.php
+	=> user/process-remove-listing.php
+	=> directoryplus.sql
+	=> directoryplus_varchar190.sql
+	=> sql/directoryplus_3.29_update.sql
+	=> sql/lang_de.php
+	=> sql/lang_en.php
+	=> sql/lang_es.php
+	=> sql/lang_fr.php
+	=> sql/lang_pt.php
+	=> db-updater.php
+	=> db-updater-sample.php
+	=> templates/user-templates/tpl-create-listing.php
+	=> templates/user-templates/tpl-custom-fields.php
+	=> templates/user-templates/tpl-edit-listing.php
+	=> templates/tpl-js/user-js/js-create-listing.php
+	=> templates/tpl-js/user-js/js-edit-listing.php
+
+[10] [improve] change select2 clear icon and placeholder opacity
+	=> templates/css/styles.css
+	=> templates/tpl-js/js-footer.php
+	=> templates/tpl-home.php
+	=> templates/header.php
+
+[11] [improve] async admin notification to make create/edit listing faster
+	=> user/notify-admin.php (created)
+	=> user/process-create-listing.php
+	=> user/process-edit-listing.php
+	=> templates/tpl-js/user-js/js-process-create-listing.php (created)
+	=> templates/tpl-js/user-js/js-process-edit-listing.php (created)
+
+[12] [improve] function to return category translations
+	=> inc/functions.php
+
+[13] [improve] ignore orphan categories when defining global custom field
+	=> admin/process-create-custom-field.php
+	=> admin/process-edit-custom-field.php
+
+[14] [improve] remove unused $cat_name var
+	=> user/edit-listing.php
+
+[15] [improve] show listing title on the edit listing page
+	=> templates/user-templates/tpl-edit-listing.php
+
+[16] [fix] #mainSearch slides up when clicking on city input field
+	=> templates/tpl-js/js-footer.php
+
+[17] [improve] if listing id is empty, redirect to user dashboard
+	=> user/process-edit-listing.php
+
+[18] [improve] empty trash pages adjustment
+	=> admin/process-empty-trash-pages.php
+
+[19] [improve] improve categories page
+	=> categories.php
+	=> templates/tpl-categories.php
+
+[20] [improve] show default custom field name if there is no translation
+	=> user/create-listing.php
+	=> user/edit-listing.php
+
+[21] [improve] approve user in admin area
+	=> templates/admin-templates/tpl-users.php
+	=> admin/process-toggle-user-status.php
+
+[22] [improve] add foreign key to user_id col in reviews table
+	=> directoryplus.sql
+	=> directoryplus_varchar190.sql
+	=> sql/directoryplus_3.29_update.sql
+
+[23] [fix] change cancel to ok in modal button
+	=> templates/admin-templates/tpl-language.php
+
+==================================================
+v.3.28 17 Apr, 2020
+==================================================
+[00] [update] change version
+	=> inc/common.inc.php
+
+[01] [fix] show subcategory links in sidebar
+	=> listings.php
+	=> results.php
+	=> templates/tpl-listings.php
+	=> templates/tpl-results.php
+
+[02] [fix] blank space in index.php
+	=> index.php
+
+[03] [fix] undefined var
+	=> reviews.php
+
+[04] [fix] is_tpl_listing adjustment
+	=> index.php
+
+==================================================
+v.3.27 14 Apr, 2020
+==================================================
+[00] [update] change version
+	=> inc/common.inc.php
+
+[01] [fix] check number of config languages
+	=> inc/widget-language-selector.php
+
+[02] [fix] custom fields translation on results page
+	=> listings.php
+	=> results.php
+	=> templates/tpl-listings.php
+	=> templates/tpl-results.php
+
+[03] [fix] results return sql error when custom field display as range in the filter
+	=> results.php
+
+[04] [improve] add no index to empty results pages
+	=> templates/tpl-listings.php
+	=> templates/tpl-results.php
+
+[05] [fix] txt_please_wait missing
+	=> make txt_please_wait global in language table
+
+[06] [fix] city gets deselected in results page
+	=> results.php
+
+[07] [improve] save city id in when clicking on categories in search results
+	=> templates/tpl-results.php
+
+[08] [improve] remove NO_AUTO_CREATE_USER from common.inc.php
+	=> inc/common.inc.php
+
+[09] [improve] change e() function to allow html comment tags
+	=> inc/functions.php
+
+[10] [improve] add website in list_items array and create $cfg_show_website
+	=> listings.php
+	=> results.php
+	=> inc/common.inc.php
+	=> templates/tpl-listings.php
+	=> templates/tpl-results.php
+
+[11] [improve] when fewer than 3 plans existing, adjust plan box display
+	=> templates/user-templates/tpl-select-plan.php
+
+[12] [feature] configurable permalink structure
+	=> inc/common.inc.php
+	=> inc/functions.php
+	=> coupon.php
+	=> favorites.php
+	=> home.php
+	=> index.php
+	=> listing.php
+	=> listings.php
+	=> profile.php
+	=> results.php
+	=> reviews.php
+	=> admin/build-sitemap.php
+	=> admin/home.php
+	=> admin/listings.php
+	=> admin/listings-trash.php
+	=> admin/process-approve-place.php
+	=> admin/process-remove-listing.php
+	=> admin/process-restore-listing.php
+	=> admin/process-settings.php
+	=> admin/process-toggle-paid.php
+	=> admin/reviews.php
+	=> admin/reviews-trash.php
+	=> user/my-favorites.php
+	=> user/my-listings.php
+	=> user/my-reviews.php
+	=> user/process-create-listing.php
+	=> user/process-edit-listing.php
+	=> user/process-remove-listing.php
+	=> payment-gateways/ipn-claim.php
+	=> payment-gateways/paypal.php
+	=> payment-gateways/stripe.php
+	=> sitemaps/sitemap-functions.php
+	=> templates/admin-templates/tpl-listings.php
+	=> templates/admin-templates/tpl-settings.php
+	=> templates/head.php
+	=> templates/modal-contact-user.php
+	=> templates/tpl-js/js-footer.php
+	=> directoryplus.sql
+	=> directoryplus_varchar190.sql
+	=> sql/directoryplus_3.27_update.sql
+	=> sql/lang_de.sql
+	=> sql/lang_es.sql
+	=> sql/lang_fr.sql
+	=> sql/lang_pt.sql
+	=> sql/lang_en.sql
+
+[13] [fix] %new_listing_url% not working
+	=> user/process-create-listing.php
+
+[14] [improve] additional token check
+	=> user/process-create-listing.php
+
+[15] [fix] undefined var $pubdate, $place_name
+	=> templates/admin-templates/tpl-reviews-trash.php
+
+[16] [fix] add to favorites code using place_id instead of listing_id
+	=> user/process-add-to-favorites.php
+	=> templates/tpl-home.php
+	=> templates/tpl-favorites.php
+	=> templates/tpl-listing.php
+	=> templates/tpl-listings.php
+	=> templates/tpl-profile.php
+	=> templates/tpl-results.php
+	=> templates/tpl-js/js-listing.php
+
+[17] [improve] remove unnecessary remove place modal
+	=> templates/user-templates/tpl-my-favorites.php
+
+[18] [improve] remove legacy language code
+	=> claim.php
+
+[19] [improve] add videoHeight property
+	=> templates/tpl-js/js-listing.php
+
+[20] [feature] create language string functionality
+	=> admin/process-create-string.php (created)
+	=> templates/admin-templates/tpl-language.php
+	=> directoryplus.sql
+	=> directoryplus_varchar190.sql
+	=> sql/directoryplus_3.27_update.sql
+	=> sql/lang_de.sql
+	=> sql/lang_es.sql
+	=> sql/lang_fr.sql
+	=> sql/lang_pt.sql
+	=> sql/lang_en.sql
+
+[21] [improve] change short description column to text
+	=> sql/directoryplus_3.27_update.sql
+	=> directoryplus.sql
+	=> directoryplus_varchar190.sql
+
+[22] [improve] rename #create-cancel to #create-cat-cancel
+	=> templates/admin-templates/tpl-categories.php
+
+[23] [improve] UI adjustments
+	=> templates/admin-templates/tpl-create-custom-field.php
+	=> templates/admin-templates/tpl-edit-custom-field.php
+
+[24] [improve] load language strings alphabetically
+	=> admin/language.php
+
+[25] [improve] create/edit listing form not showing custom field names depending on current language
+	=> templates/admin-templates/tpl-edit-custom-field.php
+
+[26] [fix] email templates subscr_eot and subscr_signup incorrect substitution variables
+	=> payment-gateways/ipn-claim.php
+	=> payment-gateways/paypal.php
+	=> payment-gateways/stripe.php
+
+[27] [improve] adjustments to my.functions.php file
+	=> inc/my.functions.php
+
+[28] [improve] create new tab 'Map' in site settings area
+	=> templates/admin-templates/tpl-settings.php
+	=> directoryplus.sql
+	=> directoryplus_varchar190.sql
+	=> sql/directoryplus_3.27_update.sql
+	=> sql/lang_de.sql
+	=> sql/lang_es.sql
+	=> sql/lang_fr.sql
+	=> sql/lang_pt.sql
+	=> sql/lang_en.sql
+
+[29] [improve] improve category slug creation routine
+	=> admin/process-create-cat.php
+	=> admin/process-edit-cat.php
+
+[30] [update] database updater
+	=> db-updater.php
+	=> db-updater-sample.php
+
+==================================================
+v.3.26 21 Feb, 2020
+==================================================
+[00] [update] change version
+	=> inc/common.inc.php
+
+[01] [fix] check basename
+	=> templates/head.php
+
+[02] [improve] use self executing function in map block
+	=> templates/tpl-js/user-js/js-create-listing.php
+	=> templates/tpl-js/user-js/js-edit-listing.php
+
+[03] [improve] add rounded class to logo upload image tag
+	=> templates/tpl-js/user-js/js-create-listing.php
+	=> templates/tpl-js/user-js/js-edit-listing.php
+
+[04] [improve] remove unnecessary userid definition
+	=> user/process-upload-logo.php
+
+[05] [fix] fix styles for select2 box in results and listings pages
+	=> templates/css/styles.css
+
+[06] [improve] duplicate element id "area_code"
+	=> templates/user-templates/tpl-edit-listing.php
+
+[07] [improve] adjustment to field types that ignores values list
+	=> admin/process-edit-custom-field.php
+
+[08] [improve] label clickable
+	=> templates/admin-templates/tpl-create-custom-field.php
+	=> templates/admin-templates/tpl-edit-custom-field.php
+
+[09] [fix] raty hints
+	=> templates/tpl-js/js-listing.php
+	=> templates/tpl-js/js-listings.php
+	=> templates/tpl-js/js-favorites.php
+	=> templates/tpl-js/js-profile.php
+	=> templates/tpl-js/js-reviews.php
+
+[10] [improve] adjustments
+	=> user/create-listing.php
+	=> templates/user-templates/tpl-custom-fields.php
+
+[11] [improve] add 404 header
+	=> user/edit-listing.php
+
+[12] [fix] tooltip translation missing
+	=> user/edit-listing.php
+
+[13] [fix] some adjustments
+	=> user/get-custom-fields.php
+
+==================================================
+v.3.25 26 Jan, 2020
+==================================================
+[00] [update] change version
+	=> inc/common.inc.php
+
+[01] [fix] lang_es.sql missing txt_regenerate_sitemap
+	=> sql/lang_es.sql
+
+[02] [fix] php short open tag can cause issue in some configurations
+	=> templates/tpl-listing.php
+	=> templates/tpl-listings.php
+	=> templates/tpl-results.php
+
+[03] [improve] improve exception handler function
+	=> inc/functions.php
+
+[04] [improve] safari doesn't support input type date
+	=> templates/user-templates/tpl-my-coupons.php
+	=> user/process-create-coupon.php
+
+[05] [improve] put link in the list_items array and adjust variable names
+	=> listings.php
+	=> results.php
+	=> templates/tpl-listings.php
+
+[06] [improve] show leaflet popup on click
+	=> templates/tpl-js/js-listings.php
+
+[07] [improve] clickable links to map popups
+	=> results.php
+	=> templates/tpl-js/js-listings.php
+
+[08] [fix] add legacy string replacement to email templates
+	=> payment-gateways/paypal.php
+	=> payment-gateways/stripe.php
+	=> sql/directoryplus_3.25_update.sql
+
+[09] [improve] multilanguage support for custom fields
+	=> listing.php
+	=> admin/create-custom-field.php
+	=> admin/edit-custom-field.php
+	=> admin/process-create-custom-field.php
+	=> admin/process-edit-custom-field.php
+	=> user/create-listing.php
+	=> user/edit-listing.php
+	=> user/get-custom-fields.php
+	=> templates/tpl-listing.php
+	=> templates/admin-templates/tpl-create-custom-field.php
+	=> templates/admin-templates/tpl-edit-custom-field.php
+	=> templates/user-templates/tpl-create-listing.php
+	=> templates/user-templates/tpl-edit-listing.php
+	=> templates/user-templates/tpl-custom-fields.php
+	=> sql/directoryplus_3.25_update.sql
+
+[10] [improve] add more leaflet features to tomtom maps
+	=> templates/tpl-js/user-js/js-create-listing.php
+
+[11] [improve] remove image dimensions from TinyMCE settings
+	=> templates/admin-templates/tpl-create-page.php
+	=> templates/admin-templates/tpl-edit-page.php
+
+[12] [improve] set default subject for contact listing owner form (message doesn't get sent when the subject is empty)
+	=> send-msg.php
+
+[13] [fix] Show error message when non-image file is uploaded
+	=> user/process-upload.php
+	=> user/process-upload-logo.php
+	=> templates/tpl-js/user-js/js-create-listing.php
+	=> templates/tpl-js/user-js/js-edit-listing.php
+	=> templates/user-templates/tpl-create-listing.php
+	=> templates/user-templates/tpl-edit-listing.php
+
+[14] [improve] honeypot in sign-up form
+	=> user/register.php
+	=> templates/user-templates/tpl-register.php
+	=> templates/tpl-js/user-js/js-register.php (created)
+
+[15] [improve] remove duplicate field id "phone"
+	=> templates/user-templates/tpl-create-listing.php
+	=> templates/user-templates/tpl-edit-listing.php
+
+[16] [improve] adjustment to admin menu
+	=> templates/admin-templates/admin-menu.php
+
+[17] [improve] improve exception handler function
+	=> inc/functions.php
+
+[18] [improve] add index to places.paid and places.feat
+	=> sql/directoryplus_3.25_update.sql
+
+[19] [improve] change order by from submission date to place_id
+	=> profile.php
+
+[20] [improve] add composite index places.feat, places.place_id
+
+[21] [fix] place_user_id missing in web_accept notification
+	=> payment-gateways/paypal.php
+
+[22] [fix] character encoding issues
+	=> payment-gateways/paypal.php
+	=> payment-gateways/ipn-claim.php
+
+[23] [improve] select2 display styles
+	=> templates/css/styles.css
+
+[24] [improve] header and footer translation
+	=> templates/header.php
+	=> templates/footer.php
+
+[25] [fix] single quotes issue
+	=> templates/tpl-js/js-footer.php
+
+[26] [improve] code to automatically change url-encoded urls to non-url-encoded url in the address bar
+	=> templates/tpl-js/js-footer.php
+
+[27] [fix] fix show_menu() function
+	=> inc/functions.php
+
+[28] [improve] change $cfg_show_custom_fields_icons = false to true
+	=> inc/common.inc.php

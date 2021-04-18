@@ -1,0 +1,12 @@
+[24-Mar-2021 01:22:09 Asia/Dili] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 12288 bytes) in /home/roctoc/public_html/inc/smart_resize_image.php on line 89
+[06-Apr-2021 08:42:15 Asia/Dili] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 917504 bytes) in /home/roctoc/public_html/user/process-create-coupon.php on line 43
+[06-Apr-2021 08:42:19 Asia/Dili] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 917504 bytes) in /home/roctoc/public_html/user/process-create-coupon.php on line 43
+[06-Apr-2021 08:42:28 Asia/Dili] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 917504 bytes) in /home/roctoc/public_html/user/process-create-coupon.php on line 43
+[06-Apr-2021 08:42:30 Asia/Dili] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 917504 bytes) in /home/roctoc/public_html/user/process-create-coupon.php on line 43
+[06-Apr-2021 08:42:30 Asia/Dili] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 917504 bytes) in /home/roctoc/public_html/user/process-create-coupon.php on line 43
+[06-Apr-2021 08:42:31 Asia/Dili] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 917504 bytes) in /home/roctoc/public_html/user/process-create-coupon.php on line 43
+[06-Apr-2021 08:42:58 Asia/Dili] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 917504 bytes) in /home/roctoc/public_html/user/process-create-coupon.php on line 43
+[06-Apr-2021 08:42:59 Asia/Dili] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 917504 bytes) in /home/roctoc/public_html/user/process-create-coupon.php on line 43
+[06-Apr-2021 08:43:00 Asia/Dili] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 917504 bytes) in /home/roctoc/public_html/user/process-create-coupon.php on line 43
+[08-Apr-2021 00:13:59 Asia/Dili] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 12441600 bytes) in /home/roctoc/public_html/inc/smart_resize_image.php on line 89
+[17-Apr-2021 01:00:50 UTC] PHP Parse error:  syntax error, unexpected ''register.php'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/roctoc/public_html/inc/common.inc.php on line 951

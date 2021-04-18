@@ -1,0 +1,25 @@
+How to update:
+
+Open the folder 'updates_[random_string]/directoryplus_3.27_update' and upload the contents to your server. This folder contains only the modified files. If you have modified the templates, please read the information below to understand how you can upgrade and keep your template modifications.
+
+If your current version is less than v.3.26, you first need to apply the previous update(s) in sequential order. For example, if you want to update from v.3.24 to v.3.27, you need to apply thedirectoryplus_3.25_update, then directoryplus_3.26_update and after that, directoryplus_3.27_update, in this order.
+
+Example video:
+http://x-php.pro/docs/how-to-update.mp4
+
+Alternatively, you can just upload all files to your server except the following files/folders
+
+- pictures/ folder
+- assets/ folder
+- inc/config.php file
+- inc/my.functions.php file
+
+==================================================
+* Template files:
+==================================================
+Starting in version 3.00, DirectoryPlus supports child themes. If you have made template modifications and want to keep them, rename the modified template files by appending the '-child' suffix.
+
+For example, if you edited the 'templates/tpl-home.php', rename it to 'templates/tpl-home-child.php'.
+Another example, if you edited the 'templates/header.php', rename it to 'templates/header-child.php'.
+
+If you edited the styles.css file and want to keep the modifications, add the modified rules in a separate CSS file.

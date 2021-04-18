@@ -1,0 +1,288 @@
+
+/******* By Milena ************/
+.articles {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    padding-top: 5px;
+    border: none;
+}
+
+.articles tbody:first-child {
+    margin-top: 0;
+}
+
+.articles tbody {
+    display: inherit;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.articles.articles-index tr {
+    box-shadow: 0 0 1px rgb(0 0 0 / 20%);
+    display: block;
+    margin-bottom: 2px;
+}
+
+.articles .article .type span.buy {
+    background-color: #51b069;
+}
+
+.articles .article .type span.sell{
+    background-color: #ff6b6b;
+}
+
+.articles .article .type span, .articles .article .avatar span {
+    width: 63px;
+    padding: 2px 0 1px;
+    font-size: 9px;
+    text-align: center;
+    display: inline-block;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgb(0 0 0 / 30%);
+}
+
+.articles .article .subject {
+    width:25%;
+}
+.articles .article .subject .inner-wrapper {
+    height: 33px;
+    max-height: 33px;
+    /*width: 258px;*/
+    white-space: nowrap;
+}
+
+.articles .article .subject a, .articles .article .subject-inner {
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #004998;
+}
+.articles .article .name{
+    width:20%;
+}
+
+.articles .article .name.inner-wrapper {
+    height: 33px;
+    max-height: 33px;
+    /*width: 100px;*/
+    white-space: nowrap;
+}
+
+.articles .article .name a, .articles .article .subject-inner {
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #004998;
+}
+
+.comment-link {
+    padding-top: 5px;
+}
+
+.comment-link a, .comment-link span {
+    font-size: 13px !important;
+    background: no-repeat url(https://roctoc.com/assets/imgs/comments.svg);
+    background-size: contain;
+    padding-left: 20px;
+    color: #b1b8c2 !important;
+    font-weight: normal !important;
+    padding-right: 3px;
+    cursor: pointer;
+}
+
+.articles .article .description {
+    width: 310px;
+    max-width: 310px;
+    padding: 12px 8px 5px;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.articles .article td, .articles .collapse-button td {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: none;
+    border-right: none;
+    word-wrap: break-word;
+}
+
+.articles .article .inner-wrapper {
+    /*height: 49px;*/
+    max-height: 49px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.articles .article .meta-data .views {
+    height: 20px;
+    font-size: 13px;
+}
+
+.articles .article .meta-data .mini-buttons {
+    width: 100%;
+    min-width: 155px;
+    height: 22px;
+    margin-bottom: 4px;
+}
+
+.articles .article .meta-data .views .count {
+    float: left;
+}
+
+.articles .article .meta-data .views .last-up-at {
+    padding: 2px 2px 0 0;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+
+.articles .article td.gray, .articles .collapse-button td.gray {
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+    background-color: #f5f7f8;
+    color: #b1b8c2;
+}
+
+.articles .article td:last-child, .articles .collapse-button td:last-child {
+    border-right: 1px solid white !important;
+}
+
+.articles.articles-index td.meta-data {
+    padding-bottom: 0;
+}
+
+.articles .article .meta-data {
+    width: 100px;
+    padding: 10px 8px 10px 14px;
+    border-right: 1px solid white;
+}
+
+.table-bordered td, .table-bordered th {
+     border: 0px solid #dee2e6; 
+}
+
+
+.collapse.in {
+    display: table-row !important;
+}
+
+.collapse {
+    display: none !important;
+}
+
+.comments {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.comments-table {
+    background-color: #f5f7f8;
+}
+
+.comments-table.collapse.in {
+    display: table-row;
+}
+
+.comments-table.collapse {
+    display: none;
+}
+
+.comments-table .comments-td {
+    padding: 10px;
+}
+
+.comments .comment .body {
+    float: left;
+    border-bottom: 1px solid #e9e9e9;
+    min-height: 40px;
+    width:100%;
+ 
+}
+
+.showmore_content {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.comments-table .lazy-load-container {
+    margin: 0px;
+}
+
+.comment-reply-form {
+    clear: both;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+.comment-form .buttons {
+    margin: 10px 0;
+}
+
+.showmore_content {
+    position: relative;
+    overflow: hidden;
+}
+
+.comments .comment .body .actions {
+    float: right;
+    width: 137px;
+    text-align: right;
+    color: #b1b8c2;
+}
+
+.comments .comment .body p {
+    float: left;
+    width: 80%;
+    padding:10px;
+    word-break: break-word;
+    line-height: 19px;
+    margin-bottom: 0px;
+}
+
+.showmore_trigger {
+    width: 100%;
+    cursor: pointer;
+}
+
+.comments .comment .showmore_trigger span:hover {
+    text-decoration: underline;
+}
+
+.comments .comment .showmore_trigger span {
+    color: #b1b8c2;
+}
+
+.comment-reply-form textarea {
+    overflow: hidden;
+    height: 30px;
+}
+.comments textarea {
+    resize: none;
+}
+
+.btn-blue {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: -webkit-linear-gradient(top, #0f90d6 0%, #0475b3 100%);
+    background-image: -o-linear-gradient(top, #0f90d6 0%, #0475b3 100%);
+    background-image: linear-gradient(to bottom, #0f90d6 0%, #0475b3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0F90D6', endColorstr='#FF0475B3', GradientType=0);
+    background-repeat: repeat-x;
+    background-color: #36a1e9;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 30%);
+}
+hr {
+     margin-top:0.5rem; 
+     margin-bottom: 0.5rem;
+}
+
+.new_comment{
+    width:80%;
+    margin:0px;
+}

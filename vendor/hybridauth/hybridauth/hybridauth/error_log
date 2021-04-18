@@ -1,0 +1,12 @@
+[30-Mar-2021 22:48:37 UTC] PHP Fatal error:  Uncaught Hybrid_Exception: You cannot access this page directly. in /home/roctoc/public_html/vendor/hybridauth/hybridauth/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/roctoc/public_html/vendor/hybridauth/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/roctoc/public_html/vendor/hybridauth/hybridauth/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/roctoc/public_html/vendor/hybridauth/hybridauth/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(Array)
+#3 /home/roctoc/public_html/vendor/hybridauth/hybridauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#4 {main}
+
+Next Hybrid_Exception: Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly. in /home/roctoc/public_html/vendor/hybridauth/hybridauth/hybridauth/Hybrid/Endpoint.php:217
+Stack trace:
+#0 /home/roctoc/public_html/vendor/hybridauth/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/roctoc in /home/roctoc/public_html/vendor/hybridauth/hybridauth/hybridauth/Hybrid/Endpoint.php on line 217

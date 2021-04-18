@@ -1,0 +1,68 @@
+=> admin/home.php
+=> admin/listings-trash.php
+=> admin/listings.php
+=> admin/process-create-custom-field.php
+=> admin/process-create-string.php
+=> admin/process-edit-custom-field.php
+=> admin/process-empty-trash-pages.php
+=> admin/process-toggle-user-status.php
+=> admin/reviews-trash.php
+=> admin/reviews.php
+
+=> inc/common.inc.php
+=> inc/functions.php
+
+=> sql/directoryplus_3.29_update.sql
+=> sql/lang_de.php
+=> sql/lang_en.php
+=> sql/lang_es.php
+=> sql/lang_fr.php
+=> sql/lang_pt.php
+
+=> templates/admin-templates/tpl-edit-custom-field.php
+=> templates/admin-templates/tpl-language.php
+=> templates/admin-templates/tpl-users.php
+
+=> templates/css/styles.css
+
+=> templates/tpl-js/js-footer.php
+
+=> templates/tpl-js/user-js/js-create-listing.php
+=> templates/tpl-js/user-js/js-edit-listing.php
+=> templates/tpl-js/user-js/js-process-create-listing.php (created)
+=> templates/tpl-js/user-js/js-process-edit-listing.php (created)
+
+=> templates/user-templates/tpl-create-listing.php
+=> templates/user-templates/tpl-custom-fields.php
+=> templates/user-templates/tpl-edit-listing.php
+
+=> templates/header.php
+=> templates/tpl-categories.php
+=> templates/tpl-home.php
+=> templates/tpl-listing.php
+=> templates/tpl-results.php
+
+=> user/create-listing.php
+=> user/edit-listing.php
+=> user/get-custom-fields.php
+=> user/my-favorites.php
+=> user/my-listings.php
+=> user/my-reviews.php
+=> user/notify-admin.php (created)
+=> user/process-create-listing.php
+=> user/process-edit-listing.php
+=> user/process-remove-listing.php
+
+=> categories.php
+=> coupon.php
+=> db-updater-sample.php
+=> db-updater.php
+=> directoryplus.sql
+=> directoryplus_varchar190.sql
+=> favorites.php
+=> home.php
+=> listing.php
+=> listings.php
+=> profile.php
+=> results.php
+=> reviews.php
